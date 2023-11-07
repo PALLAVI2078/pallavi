@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <a href="/datatype/default/object/cardwithjs.html">cardwithjs</a>
+    <style>
+        body{
+            font-style: oblique;
+        }
+    </style>
+    <center>
+    <div id="root"></div>
+    NAME:
+    <input type="text" name="" value="" id="abc"><br>
+     EMAIL:
+    <input type="email" name="" value="" id="email"><br>
+    PASSWORD:
+    <input type="password" name="" value="" id="password"><br>
+    AGE:
+    <input type="number" name="" value="" id="age"><br>
+    <button onclick="capture()">check</button>
+
+    <script>
+        function capture() {
+            let data= document.getElementById('root')
+            let data1= document.getElementById('abc')
+            let data2= document.getElementById('email')
+            let data3=document.getElementById('password')
+            let data4= document.getElementById('age')
+            data.innerHTML = `hello ${data1.value}  ${data2.value} ${data3.value} ${data4.value}`
+            
+            console.log(data1.value )
+            
+        }
+
+    </script>
+</center>
+
+   
+
+
+
+
+</body>
+</html>
